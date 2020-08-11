@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .warpper{
+            position: relative;
+            width: 1024px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .warpper .logo{
+            width: 136px;
+            height: 48px;
+            margin: 150px auto 0;
+        }
+        .warpper h3{
+            text-align: center;
+        }
+        .warpper .content{
+            text-align: center;
+        }
+        .warpper .content div span{
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+            margin-left: -50px;
+            margin-right: 20px;
+            line-height: 41px;
+        }
+        .warpper .content div img{
+            position: absolute;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .warpper .content div a{
+            position: absolute;
+            line-height: 41px;
+            margin-left: 100px;
+        }
+        .bottom{
+            width: 407px;
+            margin: 0 auto;
+        }
+        .bottom .inp,.btn{
+            width: 317px;
+            margin-left: 130px;
+            line-height: 41px;
+        }
+        .bottom .btn .btn1{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="warpper">
+        <div class="logo">
+            <img src="./images/logo_baidu.jpg" alt="">
+        </div>
+        <h3>添加注册信息</h3>
+        <div class="content">
+            <div><span>邮箱:</span><input type="text"></div>
+            <div><span>密码:</span><input type="text"></div>
+            <div><span>确认密码:</span><input type="text"></div>
+            <div><span>验证码:</span><input type="text"><img src="./images/yz.jpg" alt=""><a href="">注册用户</a></div>
+        </div>
+        <div class="bottom">
+            <div class="inp"><input type="checkbox"> <span>我已阅读并接受</span><a href="">《百度用户协议》</a>
+            </div>
+            <div class="btn">
+                <button class="btn1">注册</button>
+                <button>重新填写</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
