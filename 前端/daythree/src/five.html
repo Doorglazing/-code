@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            width: 100px;
+            height: 45px;
+         
+            line-height: 45px;
+            color: #fff;
+        }
+        a:nth-of-type(1){
+            background: url(./images2/bg1.png) no-repeat;
+            background-size: contain;
+        }
+        a:nth-of-type(2){
+            background: url(./images2/bg2.png) no-repeat;
+        }
+        a:nth-of-type(3){
+            background: url(./images2/bg3.png) no-repeat;
+        }
+        a:nth-of-type(4){
+            background: url(./images2/bg4.png) no-repeat;
+        }
+        a:nth-of-type(5){
+            background: url(./images2/bg5.png) no-repeat;
+        }
+        .one:hover{
+            background: url(./images2/bg6.png) no-repeat;
+        }
+        .two:hover{
+            background: url(./images2/bg7.png) no-repeat;
+        }
+        .three:hover{
+            background: url(./images2/bg1.png) no-repeat;
+        }
+        .four:hover{
+            background: url(./images2/bg2.png) no-repeat;
+        }
+        .five:hover{
+            background: url(./images2/bg3.png) no-repeat;
+        }
+        .one:hover+.two{
+            background: url(./images2/bg7.png) no-repeat;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <a href="#" class="one">五彩导航</a>
+    <a href="#" class="two">五彩导航</a>
+    <a href="#" class="three">五彩导航</a>
+    <a href="#" class="four">五彩导航</a>
+    <a href="#" class="five">五彩导航</a>
+</body>
+
+</html>
