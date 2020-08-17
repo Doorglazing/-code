@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <img src="" alt="">
+    <p></p>
+    <script>
+        var img = document.getElementsByTagName("img")[0];
+        var p = document.getElementsByTagName("p")[0];
+        var date = new Date().getHours();
+        if (date > 0 && date < 6) {
+            img.src = "./hao/z.gif";
+            p.innerHTML = "早上好";
+        } else if (date > 6 && date < 12) {
+            img.src = "./hao/s.gif";
+            p.innerHTML = "上午好";
+        } else if (date > 12 && date < 18) {
+            img.src = "./hao/x.gif";
+            p.innerHTML = "下午好";
+        } else {
+            img.src = "./hao/w.gif";
+            p.innerHTML = "晚上好";
+        }
+
+    </script>
 </body>
+
 </html>
