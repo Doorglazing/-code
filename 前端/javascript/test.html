@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        function area(target){
+            var i = 0, j = 0, k = 1;
+            if(target == 1){
+                console.log(1);
+                return;
+            }
+            for(var g = 1; g < target; g++){
+                i = j;
+                j = k;
+                k = i+j;
+            }
+            console.log(k)
+        }
+        // 1 1 2 3  5 8 13
+        area(7)
+    </script>
+</body>
+</html>

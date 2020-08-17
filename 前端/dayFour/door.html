@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .warpper{
+            text-align: center;
+          
+        }
+        .nav{
+            margin: -4px auto;
+            width: 760px;
+    
+        }
+        .nav ul{
+            float: left;
+            background: url(./src/images/nav_bg.jpg) repeat-x;
+            text-align: center;
+         
+        }
+        li{
+            width: 122px;
+            display: inline-block;
+            /* margin: 0 25px; */
+            background: url(./src/images/button1.jpg) no-repeat;
+            background-size: cover;
+            padding: 0 2px;
+            height: 30px;
+            line-height: 30px;
+           cursor: pointer;
+        }
+        li:hover{
+            background: url(./src/images/button2.jpg) no-repeat;
+            background-size: cover;
+        }
+        li:nth-of-type(6){
+            padding-right: 5px;
+        }
+        li a{
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warpper">
+        <!-- banner 是广告条的 -->
+        <div class="banner">
+            <img src="./src/images/banner.jpg" alt="">
+        </div>
+        <!-- nav 导航栏部分  -->
+        <!-- 以后我们重要的导航栏，都要采取 li 包含a 的写法 -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">网站首页</a></li><li><a href="#">网站首页</a></li><li><a href="#">网站首页</a></li><li><a href="#">网站首页</a></li><li><a href="#">网站首页</a></li><li><a href="#">网站首页</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
