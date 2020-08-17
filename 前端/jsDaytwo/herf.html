@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div>
+        <button id="tuanzi">由比滨</button>
+        <button id="xn">雪乃</button>
+    </div>
+    <img src="https://bkimg.cdn.bcebos.com/pic/9f2f070828381f30e924f67e1a495b086e061c955a99?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5" width="400" height="550" alt="">
+
+    <script>
+        var tuanZi = document.getElementById("tuanzi");
+        var xn = document.getElementById("xn");
+        var img = document.querySelector("img");
+        console.log(tuanZi+xn + img)
+        tuanZi.onclick = function (){
+            img.src = "https://bkimg.cdn.bcebos.com/pic/574e9258d109b3de9c820fa163f77b81800a18d8e6eb?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5";
+        }
+        xn.onclick = function(){
+            img.src = "https://bkimg.cdn.bcebos.com/pic/d1160924ab18972bd407724166856c899e510eb39caa?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5";
+        }
+    </script>
+</body>
+</html>

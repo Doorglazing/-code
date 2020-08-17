@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <button id="btn">点我啊</button>
+    <button id="btn">点   我啊</button>
     <ul>
         <li>1</li>
         <li>2</li>
@@ -27,16 +27,8 @@
     <script>
         var btn =  document.getElementById("btn");
         var ul = document.getElementsByTagName("ul")[0];
-        btn.onmouseenter = function (e){
-            ul.style.display = "block"
-            ul.onmouseenter = function(e){
-                ul.style.backgroundColor = "red";
-            }
-            ul.onmouseleave = function(e){
-                ul.style.backgroundColor = "none" ;
-                ul.style.display = "none";  
-            }
-        }
+        console.log(btn.innerHTML)
+        console.log(btn.innerText)
         
     </script>
 </body>
