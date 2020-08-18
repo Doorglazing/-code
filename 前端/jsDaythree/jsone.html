@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        .box{
+            width: 250px;
+            margin: 100px auto;
+        }
+        .box li{
+            float: left;
+            width: 24px;
+            height: 24px;
+            margin: 15px;
+            background: url(./src/sprite.png) no-repeat;
+        }
+        /* .box li:nth-of-type(2){
+            background-position: 0px -45px;
+        }
+        .box li:nth-of-type(3){
+            background-position: 0px -88px;
+        }
+        .box li:nth-of-type(4){
+            background-position: 0px -132px;
+        }
+        .box li:nth-of-type(5){
+            background-position: 0px -175px;
+        }
+        .box li:nth-of-type(6){
+            background-position: 0px -221px;
+        }
+        .box li:nth-of-type(7){
+            background-position: 0px -264px;
+        }
+        .box li:nth-of-type(8){
+            background-position: 0px -307px;
+        }
+     */
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+</div>
+<script>
+    var oLi = document.querySelectorAll("li");
+    for(var i = 0; i < oLi.length; i++){
+        oLi[i].style.backgroundPosition = "0 -" + 44*i + "px";
+    }
+    
+</script>
+</body>
+</html>

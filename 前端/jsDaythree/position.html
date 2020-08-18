@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background-color: blueviolet;
+            transition: all 1s ease-in-out;
+        }
+        .change{
+            background-color: blue;
+            color: #fff;
+            font-size: 25px;
+            top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">文本</div>
+    <script>
+        var fir = document.querySelector(".first");
+        var key = true;
+        fir.onclick = function(){
+            if(key){
+                this.classList.add("change");
+                key = false
+            }else{
+                this.classList.remove("change");
+                key = true;
+            }
+        }
+    </script>
+</body>
+</html>
