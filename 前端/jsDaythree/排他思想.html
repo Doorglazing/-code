@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url(./src/bgc/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease;
+        }
+        li img{
+            width: 150px;
+            height: 75px;
+            transition: all .5s ease;
+        }
+        ul li{
+            float: left;
+            margin: 15px;
+            padding: 5px;
+        }
+        ul{
+            width: 760px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="./src/bgc/1.jpg" alt=""></li>
+            <li><img src="./src/bgc/2.jpg" alt=""></li>
+            <li><img src="./src/bgc/3.jpg" alt=""></li>
+            <li><img src="./src/bgc/4.jpg" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        var li = document.getElementsByTagName('img');
+        var div = document.getElementsByTagName("div")[0];
+        console.log(div)
+        for(var i = 0 ; i < li.length; i++){
+            li[i].onclick = function () {
+                div.style.backgroundImage = "url("+this.src+")";
+            }
+        }
+    </script>
+</body>
+</html>
