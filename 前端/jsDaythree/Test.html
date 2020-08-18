@@ -97,6 +97,7 @@
         var tr = document.getElementsByTagName('tr');
         console.log(tr)
         for(var i = 1; i < tr.length; i++){
+            i++;
             tr[i].onmouseenter = function () {
                 this.style.backgroundColor = "pink";
                 this.onmouseleave = function () {
