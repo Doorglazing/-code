@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ul">
+        <li>西施</li>
+        <li>貂蝉</li>
+        <li>昭君</li>
+        <li>凤姐</li>
+        <li>芙蓉姐姐</li>
+    </ul>
+    <input type="button" value="按钮" id="btn" />
+    <script>
+        var ul = document.querySelector("#ul");
+        var li = document.getElementsByTagName("li");
+        ul.addEventListener("click",function (e) {
+            for(var i = 0; i < li.length; i ++){
+                li[i].style.backgroundColor = "#fff";
+            }
+            e.target.style.backgroundColor = "pink";
+        })
+        var inp = document.querySelector("#btn");
+        inp.addEventListener("click", function(e){
+            var li = document.createElement('li');
+            li.innerHTML = "天才";
+            ul.appendChild(li);
+        })
+    </script>
+</body>
+</html>

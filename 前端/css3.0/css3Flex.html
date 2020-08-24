@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            width: 400px;
+            height: 400px;
+            flex-direction: row;
+            /* row-reverse */
+            /* 默认主轴时x轴，行row，那么y轴就是侧轴 */
+            /* 我们的元素时跟随主轴进行排列 */
+            background-color: pink;
+            /* 居中 */
+            /* justify-content: center;  */
+            /* 从左往右排列 */
+            /* justify-content: flex-start;  */
+            /* 从尾往头排列 */
+            /* justify-content: flex-end;  */
+            /* 先两边贴边 然后平分剩余空间 */
+            /* justify-content: space-between;  */
+            /* 平均剩余空间 */
+            /* justify-content: space-around;  */
+            /* 换行 */
+            flex-wrap: wrap;
+            /* 不换行 如果空间不够会缩小子元素的宽度*/
+            /* flex-wrap: nowrap; */
+            /* align-items: flex-end; */
+            align-content: center;
+        }
+        div span{
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+    </div>
+</body>
+</html>

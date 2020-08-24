@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">当前时间</h1>
+
+    <div class="time-item">
+        <span class="year"></span>年
+        <span class="month"></span>月
+        <span class="day"></span>日
+        <strong><span id="hour">00</span>时</strong>
+        <strong><span id="minute">00</span>分</strong>
+        <strong><span id="second">00</span>秒</strong>
+    </div>
+   <script>
+        var day = document.getElementsByClassName("day")[0];
+        var month = document.getElementsByClassName("month")[0]
+        var year = document.getElementsByClassName("year")[0]
+        var hour = document.getElementById("hour")
+        var minute = document.getElementById("minute")
+        var second = document.getElementById("second")
+        // var ll = new Date("2020-11-11 00:00:00")
+        timeSearch();
+        setInterval(timeSearch,1000)
+        function timeSearch (){
+            var leftTime = new Date()/1000;
+            d = new Date().getDay();
+            console.log(d)
+            d = d > 10 ? d : '0' + d
+            day.innerHTML = d;
+            d = (leftTime / 3600 % 24)+8;
+            d = parseInt(d)
+            d = d > 10? d : '0' + d
+            hour.innerHTML = d;
+            d = leftTime / 60 % 60;
+            d = parseInt(d)
+            d = d > 10? d : '0' + d
+            minute.innerHTML = d;
+            d = leftTime % 60;
+            d = parseInt(d)
+            d = d > 10? d : '0' + d
+            second.innerHTML = d;
+            d = new Date().getFullYear()
+            year.innerHTML = d;
+            d = new Date().getMonth();
+            d = d > 10? d : '0' + d
+            month.innerHTML = d;
+        }
+    </script>
+</body>
+</html>

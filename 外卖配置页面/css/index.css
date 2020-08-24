@@ -1,0 +1,227 @@
+/* 总容器样式 */
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头部样式 */
+.wrapper header{
+    background-color: #009AFF;
+    opacity: 0.9;
+    width: 100%;
+    /* 相对于视口宽度和高度 */
+    /* 视口宽度被平分成100份 占多少份vw */
+    height: 12vw;
+    display: flex;
+    /* 设置单行元素排列 */
+    align-items: center;
+}
+.wrapper header .icon-location-box{
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0 1vw 0 3vw;  
+}
+.wrapper header .location-text{
+    color: #fff;
+    font-size: 4.5vw;
+    font-weight: 6s00;
+}
+.wrapper header .location-text .fa-caret-down{
+    margin-left: 1vw;
+}
+/* 搜索 search 样式 */
+.wrapper .search{
+    width: 100%;
+    height: 13vw;
+    background-color: #009AFF;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .search-fixed-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper .search-fixed-top .search-box{
+    background-color: #fff;
+    width: 90%;
+    height: 9vw;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 9vw;
+    color: #aeaeae;
+    font-family: "宋体";
+    user-select: none;
+}
+.wrapper .search-fixed-top .search-box .fa-search{
+    margin-right: 3vw;
+}
+
+
+
+/* 点餐样式 */
+.wrapper .foodtype{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.wrapper .foodtype li{
+    /* float: left; */
+    margin: 5vw 2vw 0;
+    width: 16vw;
+    cursor: pointer;
+    user-select: none;
+}
+.foodtype li img{
+    width: 70%;
+}
+.foodtype li p{
+    font-size: 12px;
+    color: #666;
+    font-weight: 100;
+}
+
+/* vip样式 */
+/*************** 横幅广告 ************************/
+.wrapper .banner{
+    width: 95%;
+    height: 29vw;
+    margin: 0 auto;
+    /*保证背景图片充满整个盒子*/
+    background-image: url(../img/index_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vw 6vw;
+    /*没有设置整个属性， 宽和高会加上pandding和border */
+    box-sizing: border-box;
+}
+
+.wrapper .banner h3{
+    font-size: 4.2vw;
+    margin-bottom: 1.2vw;
+
+}
+.wrapper .banner p{
+    font-size: 3.4vw;
+    color: #666;
+    margin-bottom: 2.4vw;
+
+}
+.wrapper .banner a{
+    font-size: 3vw;
+    color: #C79060;
+    font-weight: 700;
+}
+/* vip */
+.supermember{
+    width: 95%;
+    background-color: #FEEDC1;
+    height: 10vw;
+    margin: 1vw auto 0;
+    color: rgb(144, 96, 69);
+}
+.left{
+    float: left;
+    height: 100%;
+}
+.left img,.left h3, .left p{
+    float: left;
+    line-height: 10vw;
+    margin: 0 0 0 2vw;
+    font-size: 14px;
+}
+.left img{
+    height: 60%;
+    margin-top: 2vw;
+}
+.right{
+    float: right;
+    line-height: 10vw;
+    font-size: 14px;
+    margin-right: 2vw;
+}
+
+/* 推荐商家部分 */
+.recommend{
+    width: 95%;
+    margin: 3vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recommend p{
+    margin: 0 5vw;
+}
+.recommend .recommend-line{
+    /* background-color: #000;
+    height: 0.1vw; */
+    width: 7vw;
+    border-top: 1px solid black;
+}
+
+/* 推荐方式部分 */
+.recommendtype{
+    display: flex;
+    margin: 3vw 0;
+    justify-content: space-around;
+}
+.recommendtype li{
+    font-size: 3.5vw;
+    color: #555;
+}
+/* 推荐商家列表部分 */
+.business{
+    width: 100%;
+    margin-bottom: 14vw;
+}
+.business li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5vw;
+    user-select: none;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+}
+.business li img{
+    width: 18vw;
+    height: 18vw;
+}
+.business li .business-info{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 3vw;
+}
+.business li .business-info .business-info-h,
+.business li .business-info .business-info-star,
+.business li .business-info .business-info-delivery,
+.business li .business-info .business-info-promotion,
+.business li .business-info .business-info-promotion .business-info-promotion-left{
+    display: flex;
+    align-items: center;
+}
+.business li .business-info .business-info-h,
+.business li .business-info .business-info-star,
+.business li .business-info .business-info-delivery{
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+.business li .business-info  h3{
+    font-size: 4vw;
+}
+.business li .business-info .business-info-like{
+    width: 1.6vw;
+    height: 3.4vw;
+    color: #fff;
+    font-size: 4vw;
+    margin-left: 4vw;
+    display: flex;
+    background-color: #555;
+    justify-content: center;
+    align-items: center;
+}
+.business li .business-info 

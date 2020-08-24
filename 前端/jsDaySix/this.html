@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(this)  // window
+        function fn(){
+            console.log(this) // window
+        }
+        fn()
+        var a  = {
+            fn : function(){
+                console.log(this)
+            }
+        }
+        a.fn(); // this -> o
+        var btn;
+        btn.onclick = function () {
+            console.log(this)  // btn
+        }
+        function Fun(){
+            console.log(this)// a
+        }
+        var a = new Fun()
+        class{
+            constructor(){
+
+            }
+        }
+    </script>
+</body>
+</html>

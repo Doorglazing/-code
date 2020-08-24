@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(let i = 0; i < 2; i++){
+        //     window.onload = function (){
+        //         console.log(i)
+        //     }
+        // }
+        
+        // var tmp = 213;
+        // if(true){
+        //     console.log(tmp)
+        //     let tmp = 'abc';
+        // }
+        // var arr = [];
+        // for(var i = 0; i < 2; i++){
+        //     arr[i] = function (){
+        //         console.log(i)
+        //     }
+        // }
+        // console.log(window.i)
+        // console.log(arr)
+        // const PI = 3.14;
+        // console.log(PI)
+        const fn = (x,y) => {
+            console.log(x,y);
+        }
+        fn(1,2)
+        // 在箭头函数中。如果函数只有一句代码 并且代码的执行就是函数的返回值
+        // 大括号可以省咯
+        //
+        const sum = (s1,s2) => s1+s2;
+        console.log(sum(10,20));
+        // 在箭头函数中，如果形参只有一个
+        // 小括号可以省咯
+        const fnn = v => v*2 ;
+        console.log(fnn(2))
+        // 箭头函数不绑定this, 箭头函数没有自己this关键字
+        // 如果在箭头函数中使用this， this关键字指向自己定义位置中的this
+        const f1 = () => {
+            console.log(this) // window
+            return () => { 
+                console.log(this) // window
+            }
+        }
+        f1()() // window
+    </script>
+</body>
+</html>
