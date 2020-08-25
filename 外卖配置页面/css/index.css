@@ -1,12 +1,12 @@
 /* 总容器样式 */
-.wrapper{
+.wrapper {
     width: 100%;
     height: 100%;
 }
 
 
 /* 头部样式 */
-.wrapper header{
+.wrapper header {
     background-color: #009AFF;
     opacity: 0.9;
     width: 100%;
@@ -16,22 +16,27 @@
     display: flex;
     /* 设置单行元素排列 */
     align-items: center;
+    transition: all 1s ease;
 }
-.wrapper header .icon-location-box{
+
+.wrapper header .icon-location-box {
     width: 3.5vw;
     height: 3.5vw;
-    margin: 0 1vw 0 3vw;  
+    margin: 0 1vw 0 3vw;
 }
-.wrapper header .location-text{
+
+.wrapper header .location-text {
     color: #fff;
     font-size: 4.5vw;
     font-weight: 6s00;
 }
-.wrapper header .location-text .fa-caret-down{
+
+.wrapper header .location-text .fa-caret-down {
     margin-left: 1vw;
 }
+
 /* 搜索 search 样式 */
-.wrapper .search{
+.wrapper .search {
     width: 100%;
     height: 13vw;
     background-color: #009AFF;
@@ -40,12 +45,14 @@
     justify-content: center;
     align-items: center;
 }
-.wrapper .search-fixed-top{
+
+.wrapper .search-fixed-top {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.wrapper .search-fixed-top .search-box{
+
+.wrapper .search-fixed-top .search-box {
     background-color: #fff;
     width: 90%;
     height: 9vw;
@@ -56,31 +63,35 @@
     font-family: "宋体";
     user-select: none;
 }
-.wrapper .search-fixed-top .search-box .fa-search{
+
+.wrapper .search-fixed-top .search-box .fa-search {
     margin-right: 3vw;
 }
 
 
 
 /* 点餐样式 */
-.wrapper .foodtype{
+.wrapper .foodtype {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
-.wrapper .foodtype li{
+
+.wrapper .foodtype li {
     /* float: left; */
     margin: 5vw 2vw 0;
     width: 16vw;
     cursor: pointer;
     user-select: none;
 }
-.foodtype li img{
+
+.foodtype li img {
     width: 70%;
 }
-.foodtype li p{
+
+.foodtype li p {
     font-size: 12px;
     color: #666;
     font-weight: 100;
@@ -88,7 +99,7 @@
 
 /* vip样式 */
 /*************** 横幅广告 ************************/
-.wrapper .banner{
+.wrapper .banner {
     width: 95%;
     height: 29vw;
     margin: 0 auto;
@@ -101,45 +112,54 @@
     box-sizing: border-box;
 }
 
-.wrapper .banner h3{
+.wrapper .banner h3 {
     font-size: 4.2vw;
     margin-bottom: 1.2vw;
 
 }
-.wrapper .banner p{
+
+.wrapper .banner p {
     font-size: 3.4vw;
     color: #666;
     margin-bottom: 2.4vw;
 
 }
-.wrapper .banner a{
+
+.wrapper .banner a {
     font-size: 3vw;
     color: #C79060;
     font-weight: 700;
 }
+
 /* vip */
-.supermember{
+.supermember {
     width: 95%;
     background-color: #FEEDC1;
     height: 10vw;
     margin: 1vw auto 0;
     color: rgb(144, 96, 69);
 }
-.left{
+
+.left {
     float: left;
     height: 100%;
 }
-.left img,.left h3, .left p{
+
+.left img,
+.left h3,
+.left p {
     float: left;
     line-height: 10vw;
     margin: 0 0 0 2vw;
     font-size: 14px;
 }
-.left img{
+
+.left img {
     height: 60%;
     margin-top: 2vw;
 }
-.right{
+
+.right {
     float: right;
     line-height: 10vw;
     font-size: 14px;
@@ -147,17 +167,19 @@
 }
 
 /* 推荐商家部分 */
-.recommend{
+.recommend {
     width: 95%;
     margin: 3vw 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.recommend p{
+
+.recommend p {
     margin: 0 5vw;
 }
-.recommend .recommend-line{
+
+.recommend .recommend-line {
     /* background-color: #000;
     height: 0.1vw; */
     width: 7vw;
@@ -165,63 +187,199 @@
 }
 
 /* 推荐方式部分 */
-.recommendtype{
+.recommendtype {
     display: flex;
     margin: 3vw 0;
     justify-content: space-around;
 }
-.recommendtype li{
+
+.recommendtype li {
     font-size: 3.5vw;
     color: #555;
 }
+
 /* 推荐商家列表部分 */
-.business{
+.wrapper .business {
     width: 100%;
     margin-bottom: 14vw;
 }
-.business li{
+
+.wrapper .business li {
     width: 100%;
     box-sizing: border-box;
     padding: 2.5vw;
     user-select: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #DDD;
     display: flex;
 }
-.business li img{
+
+.wrapper .business li img {
     width: 18vw;
     height: 18vw;
 }
-.business li .business-info{
+
+.wrapper .business li .business-info {
     width: 100%;
     box-sizing: border-box;
     padding-left: 3vw;
 }
-.business li .business-info .business-info-h,
-.business li .business-info .business-info-star,
-.business li .business-info .business-info-delivery,
-.business li .business-info .business-info-promotion,
-.business li .business-info .business-info-promotion .business-info-promotion-left{
+
+.wrapper .business li .business-info .business-info-h {
     display: flex;
-    align-items: center;
-}
-.business li .business-info .business-info-h,
-.business li .business-info .business-info-star,
-.business li .business-info .business-info-delivery{
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 2vw;
 }
-.business li .business-info  h3{
+
+.wrapper .business li .business-info .business-info-h h3 {
     font-size: 4vw;
+    color: #333;
 }
-.business li .business-info .business-info-like{
+
+.wrapper .business li .business-info .business-info-h .business-info-like {
     width: 1.6vw;
     height: 3.4vw;
+    background-color: #666;
     color: #fff;
     font-size: 4vw;
     margin-left: 4vw;
     display: flex;
-    background-color: #555;
     justify-content: center;
     align-items: center;
 }
-.business li .business-info 
+
+.wrapper .business li .business-info .business-info-star {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 3.1vw;
+}
+
+
+.wrapper .business li .business-info .business-info-star .business-info-star-left {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .business li .business-info .business-info-star .business-info-star-left .fa-star {
+    color: #FEC80E;
+    margin-right: 0.5vw;
+}
+
+.wrapper .business li .business-info .business-info-star .business-info-star-left p {
+    color: #666;
+    margin-left: 1vw;
+}
+
+.wrapper .business li .business-info .business-info-star .business-info-star-right {
+    background-color: #0097FF;
+    color: #fff;
+    font-size: 2.4vw;
+    border-radius: 2px;
+    padding: 0 0.6vw;
+}
+
+.wrapper .business li .business-info .business-info-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+
+    color: #666;
+    font-size: 3.1vw;
+}
+
+.wrapper .business li .business-info .business-info-explain div {
+    border: solid 1px #DDD;
+    font-size: 2.8vw;
+    color: #666;
+    border-radius: 3px;
+    padding: 0 0.1vw;
+
+}
+
+.wrapper .business li .business-info .business-info-explain {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+
+}
+
+
+.wrapper .business li .business-info .business-info-promotion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8vw;
+
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left .business-info-promotion-left-incon {
+    width: 4vw;
+    height: 4vw;
+    background-color: greenyellow;
+    border-radius: 3px;
+    font-size: 3vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-left p {
+    color: #666;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-right {
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    color: #999;
+
+}
+
+.wrapper .business li .business-info .business-info-promotion .business-info-promotion-right p {
+    margin-right: 2vw;
+}
+/* footer样式 */
+.wrapper .footer{
+    width: 100%;
+    height: 14vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    border-top: solid 1px #DDD ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+.wrapper .footer li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    user-select: none;
+    cursor: pointer;
+}
+
+.wrapper .footer li p{
+    font-size: 2.8vw;
+
+}
+.wrapper .footer li i{
+    font-size: 5vw;
+
+}
