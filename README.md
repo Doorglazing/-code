@@ -1,6 +1,5 @@
 # -code
-文件夹 PATH 列表
-卷序列号为 0001-3864
+<<<<<<< HEAD
 C:.
 │  123.txt
 │  README.md
@@ -321,3 +320,6 @@ C:.
 └─正方形
         index.html
         
+=======
+前端 code
+>>>>>>> 516a1aadd53a39c375053cffdd00a37381d6c6f1
