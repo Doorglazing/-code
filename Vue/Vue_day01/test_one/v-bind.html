@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .wtf{
-            color: #f40;
-            font-size: 20px;
+        .warpper{
+            width: 100px;
+            height: 100px;
+            background-color: #f40;
+            opacity: 0.5;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
     <button onclick="fn()">点击</button>
     <div id="app">
-        {{time}}
-        
+        <span v-bind:class="cl" v-bind:date-log="time"></span>
+        <button v-bind:disabled = "able">jaja</button>
     </div>
     <script src="../../src/js/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <script>
-        var data = {time : 1}
+        var data = {time : 1, cl : "warpper", able : true}
         new Vue({
             el:"#app",
             data: data,
-        
         })
         var date = new Date();
         
         function fn(){
-            data.time = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDay()
+            data.time = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate()
         }
     </script>
+        
 </body>
 </html>
