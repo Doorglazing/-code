@@ -19,6 +19,7 @@
     <div id="app">
         <span v-bind:class="cl" v-bind:date-log="time"></span>
         <button v-bind:disabled = "able">jaja</button>
+        {{1>2?true:false}}
     </div>
     <script src="../../src/js/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
@@ -29,7 +30,6 @@
             data: data,
         })
         var date = new Date();
-        
         function fn(){
             data.time = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate()
         }
