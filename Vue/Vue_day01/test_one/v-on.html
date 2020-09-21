@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../src/js/vue.js"></script>
+</head>
+<body>
+    <input type="text" class="warpper" @keydown="fn">oyo</input>
+    <script>
+        new Vue({
+            el: ".warpper",
+            methods:{
+                fn :function(e){
+                    console.log(e)
+                }
+
+            }
+        })
+        function fn(){
+            alert("hello world")
+        }
+    </script>
+</body>
+</html>
