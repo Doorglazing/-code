@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../src/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{ cd }}
+        {{ fn() }}
+        {{ cofu }} <br>
+        {{ psg }}
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                cd: 12314
+            },
+            methods: {
+                fn: function(){
+                    return new Date().getFullYear()
+                }
+            },
+            computed: {
+                cofu: function(){
+                    return new Date().getDate();
+                },
+                psg:{
+                    get:function(){
+                        return "get"
+                    },
+                    set:function(str){
+                        alert(str);
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
