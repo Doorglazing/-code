@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wtf{
+            color: #f40;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        {{ a }}
+    </div>
+    <script src="../../src/js/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script>
+        var data = {a : 1}
+        new Vue({
+            el:"#app",
+            data: data
+        })
+        data.a = "hello world"
+    </script>
+</body>
+</html>
