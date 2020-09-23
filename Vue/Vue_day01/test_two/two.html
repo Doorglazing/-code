@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="el" >
+        <li v-for="(items , index) in items">{{index}}</li>
+    </div>
+    <script src="../../src/js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#el",
+            data:{
+                items: ["a","b","c"]
+            }
+        })
+    </script>
+</body>
+</html>
