@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 三个互不影响 -->
+        <ul>
+            <li>
+                <el-button n_m="haha" pro="what"></el-button>
+            </li>
+            <li>
+                <el-button></el-button>
+            </li>
+            <li>
+                <el-button></el-button>
+            </li>
+        </ul>
+    </div>
+    <script src="../src/js/vue.js"></script>
+    <script>
+        Vue.component('el-button',{
+            data: function(){
+                return {
+                    time: 0
+                }
+            },
+            prop:["n_m", "pro"],
+            template:  `
+            <button @click='time++'> {{time}}{{n_m}}{{pro}}</button>`
+        });
+        var vm = new Vue({
+            el: "#app"
+        });
+    </script>
+</body>
+</html>
