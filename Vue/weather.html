@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        //表单元素查询按钮点击事件处理程序
+        function getw(){
+                //定义url，携带数据
+                var src = "https://api.asilu.com/weather?id=101010100&callback=handler&id=" +Math.random();//加id=Math.random()的目的防止浏览器缓存
+                
+                addScriptTag(src);
+            }
+            //添加<script>标签的方法，也就就是动态加载js文件的方法，但是获得的却是对本地函数handler（）的调用
+            function addScriptTag(src){
+                var script = document.createElement('script');
+                script.setAttribute("type","text/javascript");
+                script.src = src;
+                document.body.appendChild(script);
+            }            
+            window.onload = function(){
+                //搜索apple，将自定义的回调函数名result传入callback参数中
+                addScriptTag("https://api.asilu.com/weather?id=101010100&callback=handler");                
+            }
+            //自定义的回调函数handler,response参数是返回数据
+            function handler(response) {
+                //我们就简单的获取apple搜索结果的第一条记录中url数据
+                alert(data.city);
+            }
+    </script>
+   
+ 
+
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="methDa" v-on:click="methDa">
+    </div>
+</body>
+</html>
